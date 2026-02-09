@@ -1,0 +1,14 @@
+            <div class="container">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Case Studies">Case Studies</a></li>
+                    <li><a href="#Testimonials">Testimonials</a></li>
+                    <li><a href="#Recent work">Recent work</a></li>
+                    <li><a href="#Get In Touch">Get In Touch</a></li>
+                </ul>
+                <div class="icon">  
+                        <i class="fa-brands fa-square-linkedin"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
