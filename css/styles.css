@@ -5,8 +5,13 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --main-color-text: #9C9C9C;
+    --main-background-color-: #1B1B1B;
+}
 body {
     font-family: "Work Sans", sans-serif;
+    background-color: black;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -28,16 +33,17 @@ body {
 }
 /* start header  */
 header {
-    background-color: black;
+    background-color: var(--main-background-color-);
     height: 70px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 0  0 10px 10px;
 }
 @media (max-width:768px) {
     header {
         margin: auto;
-        border-radius: 0;
+        border-radius: 0  0 10px 10px;
     }
 }
 header .container {
@@ -67,13 +73,13 @@ header .container ul{
 }
 header .container ul a {
     text-decoration: none;
-    color: #9C9C9C;
+    color: var(--main-color-text);
     cursor: pointer;
 }
 header .container .brands {
     position: absolute;
     top: 0;
-    right: 14%;
+    right: 15%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -84,8 +90,56 @@ header .container .brands {
 }
 header .container .brands i {
     font-size: 20px;
-    color: #9C9C9C;
+    color: var(--main-color-text);
     cursor: pointer;
+}
+
+
+
+
+header .container .icon {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25px;
+    height: 18px;
+    display: none;
+}
+@media (max-width: 768px) {
+    header .container .icon {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 992px) {
+    header .container .icon {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+header .container .icon:hover span:nth-child(2){
+    width: 100%;
+}
+header .container .icon span {
+    height: 2px;
+    background-color: var(--main-color-text);
+    display: flex;
+    align-items: flex-end;
+
+}
+header .container .icon span:first-child {
+    width: 100%;
+}
+header .container .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+}
+header .container .icon span:last-child {
+    width: 100%;
 }
 
 /* end header  */
