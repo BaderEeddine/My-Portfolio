@@ -7,7 +7,7 @@
 }
 :root {
     --main-color-text: #9C9C9C;
-    --main-background-color-: #1B1B1B;
+    --main-background-color: #1B1B1B;
 }
 body {
     font-family: "Work Sans", sans-serif;
@@ -33,25 +33,25 @@ body {
 }
 /* start header  */
 header {
-    background-color: var(--main-background-color-);
     height: 85px;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0  0 10px 10px;
 }
 @media (max-width:768px) {
-    header {
+    header .container {
         margin: auto;
         border-radius: 0  0 10px 10px;
     }
 }
 header .container {
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     position: relative;
-    width: 100%;
+    background-color: var(--main-background-color);
+    border-radius: 0  0 10px 10px;
 }
 header .container ul{
     display: flex;
@@ -163,7 +163,7 @@ header .container .ul2 {
     list-style-type: none;
     width: 220px;
     height: 308px;
-    background-color: var(--main-background-color-);
+    background-color: var(--main-background-color);
     z-index: 2;
     position: absolute;
     right: auto;
@@ -218,27 +218,19 @@ header .container .ul2 li a:hover {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
-}
-@media (max-width: 768px) {
-    .home .container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-    }
 }
 @media (max-width: 992px) {
     .home .container {
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         text-align: center;
+        flex-flow: wrap;
     }
 }
 .home .container .text {
-    max-width: 500px;
-    width: 100%;
+    max-width: 450px;
     padding-bottom: 100px;
 }
 @media (max-width: 992px) {
@@ -254,6 +246,8 @@ header .container .ul2 li a:hover {
 .home .container .text p {
     line-height: 1.6;
     padding-bottom: 40px;
+    padding-left: 0;
+    padding-top: 0;
     font-size: 15px;
     color: var(--main-color-text);
 }
@@ -281,6 +275,37 @@ header .container .ul2 li a:hover {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+.home .container p {
+    margin-top: 60px;
+    padding: 20px;
+    color: var(--main-color-text);
+    font-size: 16px;
+    width: 100%;
+}
+.home .container .combany {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.home .container .combany i {
+    font-size: 60px;
+    color: var(--main-color-text);
+    border: 1px solid var(--main-color-text);
+    border-radius: 10px;
+    width: 230px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.home .container .combany i:hover {
+    color: #3F8E00;
+    border-color: #3F8E00;
 }
 
 
