@@ -330,8 +330,7 @@ header .container .ul2 li a:hover {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    padding-bottom: 100px;
-    padding: 10px 10px 100px 10px;
+    padding: 10px 10px 100px
 }
 .case-Studies {
     padding-top: var(--section-padding);
@@ -343,34 +342,20 @@ header .container .ul2 li a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-.case-Studies .container .work {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-@media (max-width: 992px) {
-    .case-Studies .container .work {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column-reverse;
-    }
-    .case-Studies .container .work .text h3 {
-        padding-top: 10px;
-    }
-}
+.case-Studies .container .work ,
 .case-Studies .container .work-reverse{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    flex-direction: row-reverse;
+    justify-content: space-evenly;
     padding-bottom: var(--section-padding);
     padding-top: var(--section-padding);
+    gap: 40px;
+}
+.work-reverse {
+    flex-direction: row-reverse;
 }
 @media (max-width: 992px) {
+    .case-Studies .container .work,
     .case-Studies .container .work-reverse{
         display: flex;
         align-items: center;
@@ -380,69 +365,40 @@ header .container .ul2 li a:hover {
         padding-bottom: var(--section-padding);
         padding-top: var(--section-padding);
     }
-    .case-Studies .container .work-reverse .text h3 {
+    .case-Studies .container .text h3 {
         padding-top: 10px;
     }
 }
-.case-Studies .work .text {
+.case-Studies .text {
     max-width: 400px;
 }
-.case-Studies .work-reverse .text {
-    max-width: 400px;
-}
-.case-Studies .work .text h3 {
+.case-Studies .text h3 {
     color: black;
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 20px;
 }
-.case-Studies .work-reverse .text h3 {
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.case-Studies .work .text p {
+.case-Studies .text p {
     line-height: 1.6;
     color: var(--secondary-color);
 }
 @media (max-width: 992px) {
-    .case-Studies .work .text p {
+    .case-Studies .text p {
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
     }
 }
-.case-Studies .work-reverse .text p {
-    line-height: 1.6;
-    color: var(--secondary-color);
-}
-@media (max-width: 992px) {
-    .case-Studies .work-reverse .text p {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-    }
-}
-.case-Studies-content .work .img {
+.case-Studies-content .img {
     max-width: 500px;
     padding: 15px;
 }
-.case-Studies-content .work .img img {
+.case-Studies-content .img img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.case-Studies-content .work-reverse .img {
-    max-width: 500px;
-    padding: 15px;
-}
-.case-Studies-content .work-reverse .img img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
- .row {     
+ .first-button {     
     background-color: #FFA217;
     color: white;
     font-weight: bold;
@@ -453,7 +409,7 @@ header .container .ul2 li a:hover {
     border-style: none;
     margin-top: 60px;
 }
-.reverse-row {    
+.reverse-button {    
     background-color: #000AFF;
     color: white;
     font-weight: bold;
@@ -464,7 +420,7 @@ header .container .ul2 li a:hover {
     border-style: none;
     margin-top: 60px;
 }
-.last-row {
+.last-button {
     background-color: #2AB090;
     color: white;
     font-weight: bold;
@@ -475,4 +431,30 @@ header .container .ul2 li a:hover {
     border-style: none;
     margin-top: 60px;
 }
+.case-Studies button:hover {
+    opacity: 0.85;
+}
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+}
+.case-Studies .icon.first-icon {
+    background-color: #FFF6E9;
+    color: #FFA217;
+    font-weight: 600;
+}
+.case-Studies .icon.reverse-icon {
+    background-color: #D0E6FF;
+    color: #000AFF;
+    font-weight: 600;             
+}
+.case-Studies .icon.last-icon {
+    background-color: #E0FFF8;
+    color: #2AB090;
+    font-weight: 600;
+}
+
 /*end case-Studies*/
