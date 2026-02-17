@@ -264,6 +264,8 @@ header .container .ul2 li a:hover {
     max-width: 300px;
     border-radius: 7px;
     border-style: none;
+}.home .container .home-content .text button:hover {
+    opacity: 0.85;
 }
 .home .container .home-content .img {
     width: 350px;
@@ -453,6 +455,9 @@ header .container .ul2 li a:hover {
 }
 /*end case-Studies*/
 /* start testimonials  */
+.testimonials .container .special-heading {
+    color: white;
+}
 .testimonials {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -463,5 +468,44 @@ header .container .ul2 li a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+.testimonials .container .testimonials-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonials .container .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.testimonials .container .col .comment-content {
+    border: solid 1px var(--secondary-color);
+    border-radius: 7px;
+    color: white;
+    max-width: 445px;
+    height: 212px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.testimonials .container .col .comment-content .img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 80px;
+}
+.testimonials .container .col .comment-content .img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 /* end testimonials  */
