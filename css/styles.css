@@ -326,7 +326,7 @@ header .container .ul2 li a:hover {
     text-align: center;
     color: var(--secondary-color);
     font-size: 16px;
-    max-width: 518px;
+    max-width: 528px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
@@ -345,11 +345,11 @@ header .container .ul2 li a:hover {
 .case-Studies .container .work ,
 .case-Studies .container .work-reverse{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     padding-bottom: var(--section-padding);
     padding-top: var(--section-padding);
-    gap: 40px;
+    gap: 10px;
 }
 .work-reverse {
     flex-direction: row-reverse;
@@ -364,9 +364,6 @@ header .container .ul2 li a:hover {
         flex-direction: column-reverse;
         padding-bottom: var(--section-padding);
         padding-top: var(--section-padding);
-    }
-    .case-Studies .container .text h3 {
-        padding-top: 10px;
     }
 }
 .case-Studies .text {
@@ -390,7 +387,7 @@ header .container .ul2 li a:hover {
     }
 }
 .case-Studies-content .img {
-    max-width: 500px;
+    max-width: 600px;
     padding: 15px;
 }
 .case-Studies-content .img img {
@@ -440,21 +437,31 @@ header .container .ul2 li a:hover {
     justify-content: center;
     padding: 5px;
     border-radius: 50px;
+    margin-bottom: 27px;
 }
 .case-Studies .icon.first-icon {
     background-color: #FFF6E9;
     color: #FFA217;
-    font-weight: 600;
 }
 .case-Studies .icon.reverse-icon {
     background-color: #D0E6FF;
-    color: #000AFF;
-    font-weight: 600;             
+    color: #000AFF;            
 }
 .case-Studies .icon.last-icon {
     background-color: #E0FFF8;
     color: #2AB090;
-    font-weight: 600;
 }
-
 /*end case-Studies*/
+/* start testimonials  */
+.testimonials {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: black;
+}
+.testimonials .container {
+    max-width: 1200px;  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* end testimonials  */
