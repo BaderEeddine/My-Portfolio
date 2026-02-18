@@ -511,3 +511,66 @@ header .container .ul2 li a:hover {
     border-radius: 50%;
 }
 /* end testimonials  */
+/* start recent-work */
+.recent-work {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: white;
+}
+.recent-work .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recent-work .container .work-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.recent-work .container .work-content .work {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    text-align: left;
+    max-width: 445px;
+    height: 494px;
+    padding: 10px;
+}
+.recent-work .container .work img {
+    max-width: 445px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+@media (max-width: 992px) {
+    .recent-work .container .work img {
+        max-width: 350px;
+    }
+
+}
+.recent-work .container .work h2 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.recent-work .container .work p {
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+.recent-work .container .work button {
+    background-color: #3F8E00;
+    width: 140px;
+    height: 38px;
+    border-style: none;
+    color: white;
+    font-weight: bold;    
+    border-radius: 3px;                
+}
+.recent-work button:hover {
+    opacity: 0.85;
+}
+/* end recent-work */
