@@ -573,4 +573,20 @@ header .container .ul2 li a:hover {
 .recent-work button:hover {
     opacity: 0.85;
 }
-/* end recent-work */
+/* end recent work */
+/* start get In Touch */
+.get-In-Touch .special-heading {
+    color: white;
+}
+.get-In-Touch {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: black;
+}
+.get-In-Touch .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* end get In Touch */
