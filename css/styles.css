@@ -592,7 +592,6 @@ header .container .ul2 li a:hover {
 .get-In-Touch .container .get-In-Touch-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 50px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -604,7 +603,7 @@ header .container .ul2 li a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    padding-bottom: 20px;
 }
 .get-In-Touch .container .get-In-Touch-content input {
     background-color: white;
@@ -631,15 +630,13 @@ header .container .ul2 li a:hover {
     border-style: none;
     color: white;
     font-weight: 600;    
-    border-radius: 3px; 
-    padding: 10px;               
+    border-radius: 3px;              
 }
 .get-In-Touch .container .get-In-Touch-content button:hover {
     opacity: 0.85;
 }
 /* end get In Touch */
 /* start footer */
-/* end footer */
 footer {
     background-color: var(--main-color);
     text-align: center;
@@ -650,3 +647,4 @@ footer p {
     color: var(--secondary-color);
     font-size: 14px;
 }
+/* end footer */
